@@ -9,12 +9,16 @@ const app = express(); //express 모듈을 사용하기 위해 app 변수에 할
 app.use(cookieParser());
 app.use(express.json()); //express 모듈의 json()메소드를 사용한다.
 
-app.use(
-  cors({
-    origin: 'http://localhost:3000',
-    credentials: true,
-  })
-); //http, https 프로토콜을 사용하는 서버 간의 통신을 허용한다.
+// app.use(
+//   cors({
+//     origin: 'http://localhost:3000',
+//     credentials: true,
+//   })
+// ); //http, https 프로토콜을 사용하는 서버 간의 통신을 허용한다.
+const corsOptions = {
+  origin: 'https://aiccprojfront.gorideadpoets.com', // 클라이언트의 주소를 명시
+  credentials: true, // 자격 증명 허용
+};
 
 // Credentialed Request (인증정보를 포함한 요청)
 // 다른 출처 사이의 통신에서 보안을 강화하고 싶을 때 사용하는 방법으로, 헤더에 인증 정보를 담아 요청을 보낸다.

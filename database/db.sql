@@ -114,3 +114,14 @@ ALTER TABLE [tb명] ALTER COLUMN [col명] SET NOT NULL;
 --컬럼 NOT NULL 제거--
 
 ALTER TABLE [tb명] ALTER COLUMN [col명] DROP NOT NULL;
+
+--git test를 위한 문구--
+--git test를 위한 문구--
+--git test를 위한 문구--
+--git test를 위한 문구--
+--git test를 위한 문구--
+--git test를 위한 문구--
+--git test를 위한 문구--
+--git test를 위한 문구--
+--git test를 위한 문구--
+--git test를 위한 문구--
