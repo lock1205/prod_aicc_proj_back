@@ -22,7 +22,7 @@ app.use(
 // 프론트엔드의 요청과 서버의 응답 모두 CORS 설정이 필요하다.
 
 app.get('/', (req, res) => {
-  res.send('production back site!');
+  res.send('production back site private!');
 });
 
 app.use(require('./routes/deleteRoutes'));
