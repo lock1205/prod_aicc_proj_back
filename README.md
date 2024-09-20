@@ -69,10 +69,15 @@ package.json           # 프로젝트 의존성 및 스크립트 설정
 ## 디버그 사항 ##
 - index.js
    app.use(
+  
    cors({
+  
      origin: 'https://aiccprojfront.gorideadpoets.com',
+  
      //origin: 'http://localhost:8080',
+  
      credentials: true,
+  
     })
   );
   **origin 부분을 개발할 때와 배포할 때 변경 필요, 추후 상수로 변경하여 저장할 예정**
