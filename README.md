@@ -60,7 +60,6 @@ package.json           # 프로젝트 의존성 및 스크립트 설정
  - git clone https://github.com/lock1205/prod_aicc_proj_back.git
 
 2.npm install 
- - node_module을 설치
 
 3.env 파일 생성
  - DB_HOST,DB_USER,DB_PASS,DB_PORT,DB_NAME,SECRET_KEY=supersecretkeyverylong
