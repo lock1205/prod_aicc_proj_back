@@ -57,14 +57,11 @@ package.json           # 프로젝트 의존성 및 스크립트 설정
 
 ## 사용법 ##
 1.클론을 받은 뒤, 
-2.npm install 로 node_module을 설치
-3. .env 파일 생성 
-  DB_HOST
-  DB_USER
-  DB_PASS                    6가지 항목 추가
-  DB_PORT
-  DB_NAME
 
+2.npm install 로 node_module을 설치
+
+3. .env 파일 생성
+  DB_HOST,DB_USER,DB_PASS,DB_PORT,DB_NAME
   SECRET_KEY
 
 
