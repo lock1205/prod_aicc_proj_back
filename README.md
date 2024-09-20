@@ -2,13 +2,13 @@
 
 보유하고 있는 기술을 쉽게 설명하고 B2B, B2C 형태의 기업간 기술협의서를 작성하여 맞춤 솔루션을 의뢰 할 수 있는 서비스
 
-*벡엔드* 
-git 명 : prod_aicc_proj_back
-프레임워크 : node.js
+**벡엔드** 
+ - git 명 : prod_aicc_proj_back
+ - 프레임워크 : node.js
 
-*프론트엔드* 
-git 명 : prod_aicc_proj_front
-프레임워크 : react
+**프론트엔드** 
+ - git 명 : prod_aicc_proj_front
+ - 프레임워크 : react
 
 DB : postgres
 
@@ -57,13 +57,14 @@ package.json           # 프로젝트 의존성 및 스크립트 설정
 
 ## 사용법 ##
 1.클론을 받은 뒤
-- git clone https://github.com/lock1205/prod_aicc_proj_back.git
+ - git clone https://github.com/lock1205/prod_aicc_proj_back.git
 
-2.npm install 로 node_module을 설치
+2.npm install 
+ - node_module을 설치
 
 3.env 파일 생성
-DB_HOST,DB_USER,DB_PASS,DB_PORT,DB_NAME,SECRET_KEY
-6가지 항목을 추가
+ - DB_HOST,DB_USER,DB_PASS,DB_PORT,DB_NAME,SECRET_KEY=supersecretkeyverylong
+   6가지 항목을 추가
 
 ##
 
