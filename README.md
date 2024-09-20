@@ -66,7 +66,20 @@ package.json           # 프로젝트 의존성 및 스크립트 설정
  - DB_HOST,DB_USER,DB_PASS,DB_PORT,DB_NAME,SECRET_KEY=supersecretkeyverylong
    6가지 항목을 추가
 
-##
+## 디버그 사항 ##
+- index.js
+   app.use(
+   cors({
+     origin: 'https://aiccprojfront.gorideadpoets.com',
+     //origin: 'http://localhost:8080',
+     credentials: true,
+    })
+  );
+  **origin 부분을 개발할 때와 배포할 때 변경 필요, 추후 상수로 변경하여 저장할 예정**
+
+## 도메인과 Git 연결 ##
+- 추후 velog 링크를 추가할 예정
+   
 
 
 
