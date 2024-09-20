@@ -68,6 +68,7 @@ package.json           # 프로젝트 의존성 및 스크립트 설정
 
 ## 디버그 사항 ##
 - index.js
+  
    app.use(
   
    cors({
