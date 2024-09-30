@@ -85,25 +85,21 @@ app.post('/chat', (req, res) => {
   try {
     const sendedQuestion = req.body.question;
 
-    // EC2 서버에서 현재 실행 중인 Node.js 파일의 절대 경로를 기준으로 설정합니다.
+    // EC2 서버에서 현재 실행 중인 Node.js 파일의 절대 경로를 기준으로 설정.
     const scriptPath = path.join(__dirname, 'biz_openai.py');
+
+    // ec2 서버에서 실행하는 절대 경로: 개발 테스트 시 사용 불가
     const pythonPath = path.join(__dirname, 'venv', 'bin', 'python3');
-    console.log(pythonPath);
+
+    // 윈도우 개발 테스트 시 사용하는 절대 경로
+    // const pythonPath = path.join(__dirname, 'venv', 'Scripts', 'python.exe');
 
     // Spawn the Python process with the correct argument
     const result = spawn(pythonPath, [scriptPath, sendedQuestion]);
-
-    // result.stdout.on('data', (data) => {
-    //   console.log(data.toString());
-    //   // return res.status(200).json(data.toString());
-    // });
-
     let responseData = '';
 
     // Listen for data from the Python script
     result.stdout.on('data', (data) => {
-      // console.log(data.toString());
-      // res.status(200).json({ answer: data.toString() });
       responseData += data.toString();
     });
 
